@@ -244,7 +244,7 @@ async fn test_swap_exact_out() {
         token_y_program: spl_token::id(),
         program: dlmm_interface::id(),
         event_authority,
-        memo_program: spl_memo::ID,
+        memo_program: Pubkey::from_str_const(&spl_memo::ID.to_string()),
     }
     .into();
 
@@ -423,7 +423,7 @@ async fn test_swap() {
         token_y_program: spl_token::id(),
         program: dlmm_interface::id(),
         event_authority,
-        memo_program: spl_memo::id(),
+        memo_program: Pubkey::from_str_const(&spl_memo::ID.to_string()),
     }
     .into();
 

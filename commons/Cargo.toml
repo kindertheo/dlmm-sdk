@@ -22,10 +22,11 @@ num-integer = { workspace = true }
 bytemuck = { workspace = true }
 async-trait = { workspace = true }
 spl-transfer-hook-interface = { workspace = true }
+zeroize = "1.8.1"
 
 [dev-dependencies]
 spl-associated-token-account = { workspace = true }
-solana-program-test = "1.17.0"
+solana-program-test = { workspace = true }
 assert_matches = "1.5.0"
-solana-program = "1.17.0"
+solana-program = { workspace = true }
 spl-memo = { workspace = true, features = ["no-entrypoint"] }
